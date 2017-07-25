@@ -5,6 +5,7 @@
 
 ### 检出仓库
  git clone
+ git remote add origin
 
 ### 添加和提交
 git add filename/git add *  
@@ -27,6 +28,8 @@ git push origin master
  git branch -a
 ### 删除分支
  git branch -d
+### 删除远程分支
+git push origin --delete remote_branch
 ###  将本地分支推送到远程
  git push origin 本地分支名:远程分支名
 
@@ -40,7 +43,7 @@ git diff 源分支 目标分支
 
 ### 标签  
 git tag 标签名  
-git push 标签名
+git push origin 标签名
 
 ### 替换本地改动
 git checkout 文件名
